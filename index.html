@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📍 JEJAK PERANGKAT — IKROM WALIDAINI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: #050508;
+            color: #0f0;
+            min-height: 100vh;
+            padding: 20px;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(0,255,0,0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0,0,255,0.03) 0%, transparent 50%);
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+            animation: kedip 1.2s infinite;
+            line-height: 1.5;
+        }
+        @keyframes kedip {
+            0%,100% {opacity:1;}
+            50% {opacity:0.5;}
+        }
+        .lokasi-card {
+            border: 1px solid rgba(0,255,0,0.4);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 14px;
+            background: rgba(0,60,0,0.08);
+            box-shadow: 0 0 12px rgba(0,255,0,0.15), inset 0 0 8px rgba(0,255,0,0.05);
+            animation: muncul 0.7s ease-out forwards;
+            opacity: 0;
+            backdrop-filter: blur(4px);
+        }
+        .lokasi-card:nth-child(2) {animation-delay: 0.15s;}
+        .lokasi-card:nth-child(3) {animation-delay: 0.30s;}
+        .lokasi-card:nth-child(4) {animation-delay: 0.45s;}
+        .lokasi-card:nth-child(5) {animation-delay: 0.60s;}
+        .lokasi-card:nth-child(6) {animation-delay: 0.75s;}
+        .lokasi-card:nth-child(7) {animation-delay: 0.90s;}
+        .lokasi-card:nth-child(8) {animation-delay: 1.05s;}
+        @keyframes muncul {
+            from {transform: translateY(25px) scale(0.96); opacity:0;}
+            to {transform: translateY(0) scale(1); opacity:1;}
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+            color: #fff;
+        }
+        .koordinat {
+            color: #0ff;
+            font-size: 0.85rem;
+            margin: 5px 0;
+        }
+        .keterangan {
+            color: #afa;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+        .waktu {
+            color: #666;
+            font-size: 0.75rem;
+            margin-top: 6px;
+        }
+        .peringatan {
+            margin-top: 30px;
+            padding: 18px;
+            border: 1px solid #ff0;
+            background: rgba(255,255,0,0.06);
+            color: #ffd700;
+            border-radius: 12px;
+            text-align: center;
+            animation: peringatan 2s infinite;
+        }
+        @keyframes peringatan {
+            0%,100% {box-shadow: 0 0 5px #ff0;}
+            50% {box-shadow: 0 0 25px #ff0;}
+        }
+        .id-perangkat {
+            text-align: center;
+            color: #444;
+            margin-top: 25px;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+        }
+        .garis-pemisah {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #0f0, transparent);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🌐 JEJAK DIGITAL — IKROM WALIDAINI<br>
+    <span style="font-size:0.8rem; color:#8f8;">Beberapa lokasi terhubung secara serentak</span></h1>
+
+    <div class="garis-pemisah"></div>
+
+    <!-- 1. Depok -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#0f0; color:#000;">✅ TITIK UTAMA</span>
+        <h3>📍 Depok, Jawa Barat — Indonesia</h3>
+        <p class="koordinat">-6.4025, 106.7942</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Tempat keberadaan fisik perangkat saat ini. Pusat kendali utama, semua perintah dikirim dari sini.</p>
+        <p class="waktu">Terakhir diperbarui: Tepat sekarang</p>
+    </div>
+
+    <!-- 2. Tegal -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#0af; color:#000;">🔄 PUSAT ASAL</span>
+        <h3>📍 Tegal, Jawa Tengah — Indonesia</h3>
+        <p class="koordinat">-6.9667, 109.1333</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Daerah asal & akar sejarah. Jalur memori tetap terhubung ke tempat lahir & tumbuh.</p>
+        <p class="waktu">Sinkronisasi: 2 menit lalu</p>
+    </div>
+
+    <!-- 3. Jakarta -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#fa0; color:#000;">⚡ GERBANG UTAMA</span>
+        <h3>📍 Jakarta, DKI Jakarta — Indonesia</h3>
+        <p class="koordinat">-6.2000, 106.8167</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Pusat pertukaran data & gerbang ke jaringan nasional. Semua koneksi keluar-masuk melewati sini.</p>
+        <p class="waktu">Aktif: 1 menit lalu</p>
+    </div>
+
+    <!-- 4. Singapura -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#4169e1; color:#fff;">🌍 JALUR INTERNASIONAL</span>
+        <h3>📍 Singapura, Republik Singapura</h3>
+        <p class="koordinat">1.3521, 103.8198</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Gerbang menuju dunia luar. Jalur koneksi ke pengguna & klien mancanegara.</p>
+        <p class="waktu">Status: Sedang berlangsung...</p>
+    </div>
+
+    <!-- 5. Tokyo -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#dc143c; color:#fff;">⚡ JALUR CADANGAN ASIA</span>
+        <h3>📍 Tokyo, Jepang</h3>
+        <p class="koordinat">35.6762, 139.6503</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Simpul cadangan jika jalur utama terganggu. Menjamin koneksi tetap stabil 24 jam.</p>
+        <p class="waktu">Sinkron: 5 detik lalu</p>
+    </div>
+
+    <!-- 6. California -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#9932cc; color:#fff;">🔬 PUSAT PENGEMBANGAN</span>
+        <h3>📍 California, Amerika Serikat</h3>
+        <p class="koordinat">37.7749, -122.4194</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Tempat pembaruan sistem & teknologi terbaru. Ide-ide baru lahir & diuji di sini.</p>
+        <p class="waktu>Pembaruan: 30 detik lalu</p>
+    </div>
+
+    <!-- 7. Frankfurt -->
+    <div class="lokasi-card">
+        <span class="status" style="background:#228b22; color:#fff;">🌐 PUSAT DATA EROPA</span>
+        <h3>📍 Frankfurt, Jerman</h3>
+        <p class="koordinat">50.1109, 8.6821</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Penyimpanan salinan data & cadangan proyek. Agar tak hilang meski satu jalur terputus.</p>
+        <p class="waktu">Terkunci: Aman & Terenkripsi</p>
+    </div>
+
+    <!-- 8. Ruang Siber -->
+    <div class="lokasi-card">
+        <span class="status" style="background:linear-gradient(90deg,#f0f,#0ff); color:#000;">♾️ JARINGAN TAK TERLIHAT</span>
+        <h3>📍 Ruang Siber — Tanpa Batas Wilayah</h3>
+        <p class="koordinat">Koordinat: Tak Terukur</p>
+        <p class="keterangan">💡 <strong>Maksud:</strong> Ini jejak sesungguhnya — tidak terikat tempat, tidak terikat waktu. Di mana pun ada internet, di situ ada Ikrom Walidaini.</p>
+        <p class="waktu">Status: Selalu Hadir</p>
+    </div>
+
+    <div class="garis-pemisah"></div>
+
+    <div class="peringatan">
+        ⚠️ SISTEM TERSEBAR DI BEBERAPA TITIK SECARA SERENTAK<br>
+        <span style="font-size:0.85rem; margin-top:8px; display:block;">"Bukan di satu tempat, tapi di mana-mana — karena kemampuan tak dibatasi peta."</span>
+    </div>
+
+    <p class="id-perangkat">IDENTITAS: IKROM WALIDAINI | STATUS: TAK TERBATAS | VERSI: TAK BERAKHIR</p>
+</div>
+
+</body>
+</html>
